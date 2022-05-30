@@ -12,4 +12,4 @@ document.getElementById("apply").addEventListener("click", async() => {
     saveSettings(allMatchesHighlightColor, focusedMatchHighlightColor, opacity)
 });
 
-document.getElementById("cancel").addEventListener("click", async() => { loadSettings() });
+document.getElementById("cancel").addEventListener("click", async() => { window.close() });
