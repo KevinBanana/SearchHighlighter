@@ -7,9 +7,15 @@
     </head>
     <body>
         <div>
-            <input type="color" id="highlight" name="highlight"
+            <input type="color" id="allMatchesHighlight" name="highlight"
                    value="#e66465">
-            <label for="highlight">Highlight color</label>
+            <label for="allMatchesHighlight">All matches</label>
+        </div>
+
+        <div>
+            <input type="color" id="focusedMatchHighlight" name="highlight"
+                   value="#e66465">
+            <label for="focusedMatchHighlight">Focused match</label>
         </div>
 
         <p>Gray-out opacity: </p>
@@ -17,9 +23,12 @@
             <input type="range" min="0" max="100" value="25" class="slider" id="gray-opacity">
         </div>
 
-        <script src="settings.js"></script>
+        <div id="buttons">
+            <button id="cancel" class="cancelbutton">Cancel</button>
+            <button id="apply" class="applybutton">Apply</button>
+        </div>
 
-        <button id="cancel"></button>
-        <button id="apply"></button>
+        <script src="background.js"></script>
+        <script src="settings.js"></script>
     </body>
 </html>

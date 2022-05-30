@@ -1,7 +1,15 @@
-let highlightColor = document.getElementById("highlight")
-let opacity = document.getElementById("gray-opacity")
+let allMatchesInput = document.getElementById("allMatchesHighlight")
+let focusedMatchInput = document.getElementById("focusedMatchHighlight")
+let opacityInput = document.getElementById("gray-opacity")
 
-chrome.storage.sync.set({ highlightColor });
-chrome.storage.sync.set({ opacity });
-console.log(`SearchHighlighter::Highlight color set to ${highlightColor}`);
-console.log(`SearchHighlighter::Gray-out opacity set to ${opacity}`);
+loadSettings()
+
+document.getElementById("apply").addEventListener("click", async() => {
+    allMatchesHighlightColor = allMatchesInput.value
+    focusedMatchHighlightColor = focusedMatchInput.value
+    opacity = opacityInput.value
+
+    saveSettings(allMatchesHighlightColor, focusedMatchHighlightColor, opacity)
+});
+
+document.getElementById("cancel").addEventListener("click", async() => { loadSettings() });

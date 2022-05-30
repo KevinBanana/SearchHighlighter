@@ -1,5 +1,10 @@
+body {
+    min-width: 170px;
+}
+
 .slide-container {
     width: 100%;
+    margin-top: -12px;
 }
 
 .slider::-webkit-slider-thumb {
@@ -13,4 +18,66 @@
 
 .slider:hover {
     opacity: 1; /* Fully shown on mouse-over */
+}
+
+.cancelbutton {
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+    background-color:#f9f9f9;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-family:Arial;
+    font-size:12px;
+    font-weight:bold;
+    padding:6px 20px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+    margin-right: 3px;
+}
+.cancelbutton:hover {
+    background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+    background-color:#e9e9e9;
+}
+.cancelbutton:active {
+    position:relative;
+    top:1px;
+}
+
+.applybutton {
+    box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+    background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+    background-color:#b8e356;
+    border-radius:6px;
+    border:1px solid #83c41a;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:12px;
+    font-weight:bold;
+    padding:6px 20px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #86ae47;
+    margin-left: 3px;
+}
+.applybutton:hover {
+    background:linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
+    background-color:#a5cc52;
+}
+.applybutton:active {
+    position:relative;
+    top:1px;
+}
+
+#buttons {
+    margin-top: 11px;
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+#allMatchesHighlight {
+    margin-bottom: 4px;
 }
