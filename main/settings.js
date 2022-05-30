@@ -5,11 +5,7 @@ let opacityInput = document.getElementById("gray-opacity")
 loadSettings()
 
 document.getElementById("apply").addEventListener("click", async() => {
-    allMatchesHighlightColor = allMatchesInput.value
-    focusedMatchHighlightColor = focusedMatchInput.value
-    opacity = opacityInput.value
-
-    saveSettings(allMatchesHighlightColor, focusedMatchHighlightColor, opacity)
+    saveSettings(allMatchesInput.value, focusedMatchInput.value, opacityInput.value)
 });
 
 document.getElementById("cancel").addEventListener("click", async() => { window.close() });
