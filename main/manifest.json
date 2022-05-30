@@ -2,5 +2,24 @@
   "name": "Search Highlighter",
   "description": "A Chrome extension that highlights Ctrl+F results more visibly",
   "version": "1.0",
-  "manifest_version": 3
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/icons/searchglass16.png",
+      "32": "/icons/searchglass32.png",
+      "48": "/icons/searchglass48.png",
+      "128": "/icons/searchglass128.png"
+    }
+  },
+  "icons": {
+    "16": "/icons/searchglass16.png",
+    "32": "/icons/searchglass32.png",
+    "48": "/icons/searchglass48.png",
+    "128": "/icons/searchglass128.png"
+  }
 }
