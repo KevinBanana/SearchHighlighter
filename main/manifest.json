@@ -1,0 +1,6 @@
+{
+  "name": "Search Highlighter",
+  "description": "A Chrome extension that highlights Ctrl+F results more visibly",
+  "version": "1.0",
+  "manifest_version": 3
+}
